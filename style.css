@@ -1,0 +1,116 @@
+/* --------------------
+   Global App Styling
+-------------------- */
+.stApp {
+    background-color: #f5f5f5;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #2c3e50;
+}
+
+/* --------------------
+   Sidebar Styling
+-------------------- */
+[data-testid="stSidebar"] {
+    background-color: #2c3e50 !important;
+    color: white !important;
+}
+
+[data-testid="stSidebar"] * {
+    color: white !important;
+}
+
+/* --------------------
+   Profile Image
+-------------------- */
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* --------------------
+   Headers
+-------------------- */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* --------------------
+   Download Button
+-------------------- */
+.stDownloadButton button {
+    background-color: #2c3e50 !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.stDownloadButton button:hover {
+    background-color: #1a252f !important;
+}
+
+/* --------------------
+   Contact Form
+-------------------- */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: inherit;
+}
+
+form button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: center;
+    width: 160px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #1a252f;
+}
+
+/* --------------------
+   Section Dividers
+-------------------- */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+    margin: 30px 0;
+}
